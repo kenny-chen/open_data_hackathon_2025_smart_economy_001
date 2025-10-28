@@ -1,0 +1,126 @@
+AIGIS零售債券規劃工具。
+幫助 
+①食息一族(基層+中產)
+②投資銀行(發行承銷)
+③發債人(港府/私企)
+
+香港民生痛點
+①阿婆：庫房冇錢，咪發債cap水。
+②基層：有錢都拎曬去出糧，都冇野比到市民。
+③中產：淨系識cap水我都識做啦。
+
+AIGIS零售債券規劃工具
+①[what]香港債務儀。 認知差: 債務vs增長。 庫房vs財政。
+[債務是經濟增長的副產品。因所有發達國家都有債務。]
+[財政是勝負手。比起守著庫房一毛錢，用好財政半毛錢更重要。]
+
+②[why]香港財政債務GIS地圖。 認知差: 效率效益vs資金用途 太遠見vs太近利 
+❌太近，不知效益。太遠，不知用途。
+[錢要用得好，讓投資民生幸福看得見。]
+[大型基建是未來，幻想空間和債務回本期暫不設上限。]
+
+中產：值得投資（Return on Investment），關心錢是否「有效率地使用」。
+‍基層：人人受益（Equity & Accessibility），關心錢是否「真正改善生活」。
+
+③[how]零售債券需求預測模型。 定價規模&承銷時機
+❌宏觀經濟，美元利率，全球供應鏈，商品供需?
+
+[AIGIS零售債券規劃工具]
+零售債券需求預測 = 資金生水 + 定價水位 + 承銷時機 + 投標項目
+資金生水: 年齡人口*家庭錢(銀行M2存款)
+定價水位: 現金寶年化收益率+半釐
+承銷時機: 股市高水&股市低水
+投標項目: 大型基建+小型民生
+
+前瞻性預測
+2025年銀債 [驗證]
+
+①人口
+1963 114.6w
+1964 107.6w
+1965 101.1w
+①存款
+2024-08 7,727,806.38百萬港元
+2024-12 7,827,269.41百萬港元
+2025-08 8,032,047.34百萬港元
+②定價水位
+2024-08 4.4%+半釐
+2024-12 3.5%+半釐
+2025-08 2.2%+半釐
+③承銷時機
+2024-08 HSI 17,000
+2024-08 HSI 20,000
+2025-08 HSI 25,000
+④投標項目
+机場三跑
+北部都會區
+
+上限建簿，下限建簿。
+2025年零售債券 [預測]
+
+***
+
+[國際貨幣基金組織] 全球債務數據庫 Global Debt Database
+https://www.imf.org/external/datamapper/GG_DEBT_GDP@GDD/SWE
+
+[香港金融管理局] 綠色債券報告2025
+https://www.hkgb.gov.hk/tc/greenbond/greenbondreport.html
+
+[財經事務及庫務局/立法會發展事務委員會] 基本工程儲備基金 按總目列出的支出
+https://www.budget.gov.hk/2024/chi/pdf/c-cwrf-s.pdf
+
+[香港金融管理局] 金融數據月報 銀行體系 客戶存款 港元及外幣存款
+https://data.gov.hk/tc-data/dataset/hk-hkma-t03-t030301customer-deposits-by-type-hkd-fc
+https://apidocs.hkma.gov.hk/chi/documentation/market-data-and-statistics/monthly-statistical-bulletin/banking/customer-deposits-by-type-hkd-fc/
+
+[香港交易所/盈透證券] 泰康開泰港元貨幣基金 年化收益率
+https://ifp.hkex.com.hk/fund/BRG187
+
+[政府統計處] 政府的收入和開支
+https://data.gov.hk/tc-data/dataset/hk-censtatd-tablechart-340-47001
+
+[政府統計處] 政府收入 一般收入帳目及各基金
+https://www.censtatd.gov.hk/tc/web_table.html?id=340-47011
+
+[政府統計處] 政府開支 一般收入帳目及各基金
+https://www.censtatd.gov.hk/tc/web_table.html?id=340-47012
+
+[政府統計處] 按分區、性別及年齡劃分的人口數目
+https://www.censtatd.gov.hk/tc/web_table.html?id=110-06811
+
+[政府統計處] 按區議會分區劃分的家庭住戶平均人數及住戶每月入息中位數
+https://data.gov.hk/tc-data/dataset/hk-censtatd-tablechart-130-06806
+https://www.censtatd.gov.hk/tc/wbr.html?ecode=B11303012024AN24
+
+[香港金融管理局] 固定收益及貨幣市場發展路線圖2025
+https://www.hkma.gov.hk/media/chi/doc/key-information/press-release/2025/20250925c3a1.pdf
+
+[民政事務總署] 地方行政區分界
+https://data.gov.hk/tc-data/dataset/hk-had-json1-hong-kong-administrative-boundaries
+
+[思源宋體] 思源宋體
+https://github.com/adobe-fonts/source-han-serif/tree/release/?tab=readme-ov-file
+
+
+***
+
+Visible Districts (18): Central & Western 中西區 (A), Wan Chai 灣仔 (B), Eastern 東區 (C), Southern 南區 (D), Yau Tsim Mong 油尖旺 (E), Sham Shui Po 深水埗 (F), Kowloon City 九龍城 (G), Wong Tai Sin 黃大仙 (H), Kwun Tong 觀塘 (J), Tsuen Wan 荃灣 (K), Tuen Mun 屯門 (L), Yuen Long 元朗 (M), North 北區 (N), Tai Po 大埔 (P), Sai Kung 西貢 (Q), Sha Tin 沙田 (R), Kwai Tsing 葵青 (S), Islands 離島 (T)
+
+中西區
+灣仔
+東區
+南區
+油尖旺
+深水埗
+九龍城
+黃大仙
+觀塘
+荃灣
+屯門
+元朗
+北區
+大埔
+西貢
+沙田
+葵青
+離島
