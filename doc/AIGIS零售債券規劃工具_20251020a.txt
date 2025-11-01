@@ -1,45 +1,139 @@
-AIGIS零售債券規劃工具。
+[PPT] AIGIS零售債券規劃工具。
+https://www.canva.cn/design/DAG3D7rRE3s/fYMk7mGhoIcFQY-6vJL8FQ/view?utm_content=DAG3D7rRE3s&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h5241d1ca21
+
 幫助 
+
+主要受惠人
 ①食息一族(基層+中產)
 ②投資銀行(發行承銷)
 ③發債人(港府/私企)
 
+Main Beneficiaries:
+
+Interest earners – working class and middle class
+Investment banks – handle bond sales
+Bond issuers – like the Hong Kong government and private firms
+
+
+
 香港民生痛點
-①阿婆：庫房冇錢，咪發債cap水。
+①阿公：庫房冇錢，咪發債cap水。
 ②基層：有錢都拎曬去出糧，都冇野比到市民。
-③中產：淨系識cap水我都識做啦。
+③中產：淨系識Cap水我都識做啦。
+
+Public Pain Point in Hong Kong:
+Elderly: The government has no money, so it issues bonds to raise funds.
+Working Class: Even with money, most of it goes to salaries — nothing left for the public.
+Middle Class: Just issuing bonds? Anyone can do that.
+
+香港債務儀
+債務 vs 增長
+庫房 vs 財政
+
+香港財政債務GIS地圖
+效率效益 vs 資金用途
+太遠見 vs 太近利 
+
+零售債券需求預測模型
+定價規模
+承銷時機
+
+Hong Kong Debt Dashboard
+Debt vs Growth
+Treasury vs Budget
+
+GIS Map of Hong Kong’s Fiscal Debt
+Efficiency vs Spending
+Long-term vision vs Short-term gain
+
+Retail Bond Demand Forecast Model
+Pricing and Size
+Best Time to Underwrite
 
 AIGIS零售債券規劃工具
 ①[what]香港債務儀。 認知差: 債務vs增長。 庫房vs財政。
 [債務是經濟增長的副產品。因所有發達國家都有債務。]
 [財政是勝負手。比起守著庫房一毛錢，用好財政半毛錢更重要。]
 
+Debt is a by-product of economic growth – All developed countries have debt.
+Fiscal policy is the key to success – Instead of saving every cent, it’s more important to use even half a cent wisely.
+
 ②[why]香港財政債務GIS地圖。 認知差: 效率效益vs資金用途 太遠見vs太近利 
-❌太近，不知效益。太遠，不知用途。
-[錢要用得好，讓投資民生幸福看得見。]
-[大型基建是未來，幻想空間和債務回本期暫不設上限。]
+❌
+太高，不知效益。
+No idea if it works.
+
+太遠，不知用途。
+No idea where the money goes.
+
+
+錢要用得好，讓投資民生幸福看得見。
+大型基建是未來，幻想空間和債務回本期暫不設上限。
+天橋底，看得見的民生幸福。觀塘活化翠屏河。
+
+零售債券需求預測模型。 定價規模&承銷時機。
+
+如何橫向對比不同經濟結構？
+如何平衡大型基建vs小型民生？
+如何剌激零售債券的市場需求？
+
 
 中產：值得投資（Return on Investment），關心錢是否「有效率地使用」。
 ‍基層：人人受益（Equity & Accessibility），關心錢是否「真正改善生活」。
 
-③[how]零售債券需求預測模型。 定價規模&承銷時機
+Hong Kong Debt Map:
+Short-term view: no idea if it works.
+Long-term view: no idea where the money goes.
+
+Use money wisely — show clear benefits for people’s daily lives.
+Big infrastructure is the future; for now, dreams and debt have no limit.
+
+Smart Use of Money — Spend wisely to improve lives in ways people can see.
+
+Visible Impact: Real happiness under the flyover — like revitalizing Tsui Ping River in Kwun Tong.
+
+How to compare different economies?
+How to balance big projects vs. small community needs?
+How to boost demand for retail bonds?
+
+Middle class: “Does it pay back?”
+Working class: “Does it help us live better?”
+
+天橋底，看得見的民生幸福。觀塘活化翠屏河。
+Under the bridge, real-life happiness is on display — Kwun Tong’s revitalized River.
+
+Retail Bond Demand Forecast Model. Pricing & Size & Best Time to Underwrite.
+③[how]零售債券需求預測模型。 定價規模&承銷時機。
 ❌宏觀經濟，美元利率，全球供應鏈，商品供需?
 
 [AIGIS零售債券規劃工具]
 零售債券需求預測 = 資金生水 + 定價水位 + 承銷時機 + 投標項目
-資金生水: 年齡人口*家庭錢(銀行M2存款)
+資金生水: 人口基數* [家庭存款] (銀行M2存款上升)
 定價水位: 現金寶年化收益率+半釐
 承銷時機: 股市高水&股市低水
 投標項目: 大型基建+小型民生
 
+Money Flow + Pricing Level + Timing + Project Type
+
+Money Flow: Population × Household Savings (Bank M2 Deposits Are Rising)
+Pricing Level: Annual return of cash fund + 0.5%
+Timing: When stock market is high or low
+Project Type: Big infrastructure + Small community projects
+
+25銀債 超額認購 1.8倍
+24基礎 未足額認購 0.8倍
+
+25 Silver: Oversubscribed by 1.8×
+24 Infrastructure: Undersubscribed at 0.8×
+
 前瞻性預測
 2025年銀債 [驗證]
 
-①人口
+①人口基數
 1963 114.6w
 1964 107.6w
 1965 101.1w
-①存款
+①家庭存款
 2024-08 7,727,806.38百萬港元
 2024-12 7,827,269.41百萬港元
 2025-08 8,032,047.34百萬港元
@@ -55,10 +149,62 @@ AIGIS零售債券規劃工具
 机場三跑
 北部都會區
 
+預測2026年零售債券
+
 上限建簿，下限建簿。
-2025年零售債券 [預測]
+
+食息一族 上升88.2萬人
+
+家庭存款 上升2.2yoy
+家庭存款 不變0.0yoy
+
+定價水位 3.5%
+定價水位 2.8%
+
+恆生指數 28,000點
+恆生指數 24,000點
+
+投標項目 不變
+
+超額2.1倍 1,000億
+超額1.2倍 600億
+
+2026 Retail Bond Forecast
+
+Bookbuilding Range: Upper and lower limits
+Interest Earners: Up to 882,000 people
+Household Savings:
+– Up 2.2% YoY
+– Flat at 0.0% YoY
+Pricing Level:
+– 3.5%
+– 2.8%
+Hang Seng Index:
+– 28,000 points
+– 24,000 points
+Project Type: No change
+Oversubscription:
+– 2.1× for HK$100 billion
+– 1.2× for HK$60 billion
+
+下一步
+如何橫向對比不同經濟結構？
+如何平衡大型基建vs小型民生？
+如何剌激零售債券的市場需求？
+
+Next steps
+Compare different economies side-by-side?
+Balance big builds with small community fixes?
+Boost interest in retail bonds
+
+香港債務儀：如何橫向對比不同經濟結構？
+香港財政債務GIS地圖：如何平衡大型基建vs小型民生？
+零售債券需求預測模型：如何剌激零售債券的市場需求？
 
 ***
+
+香港公開數據 & 私企數據
+Hong Kong Public & Private Companies Data
 
 [國際貨幣基金組織] 全球債務數據庫 Global Debt Database
 https://www.imf.org/external/datamapper/GG_DEBT_GDP@GDD/SWE
@@ -76,21 +222,14 @@ https://apidocs.hkma.gov.hk/chi/documentation/market-data-and-statistics/monthly
 [香港交易所/盈透證券] 泰康開泰港元貨幣基金 年化收益率
 https://ifp.hkex.com.hk/fund/BRG187
 
+[前沿資本] 零售債券 市場認購
+https://github.com/kenny-chen/open_data_hackathon_2025_smart_economy_001/blob/web/app/%E5%89%8D%E6%B2%BF%E8%B3%87%E6%9C%AC-%E9%9B%B6%E5%94%AE%E5%82%B5%E5%88%B8-%E5%B8%82%E5%A0%B4%E8%AA%8D%E8%B3%BC.csv
+
 [政府統計處] 政府的收入和開支
 https://data.gov.hk/tc-data/dataset/hk-censtatd-tablechart-340-47001
 
-[政府統計處] 政府收入 一般收入帳目及各基金
-https://www.censtatd.gov.hk/tc/web_table.html?id=340-47011
-
 [政府統計處] 政府開支 一般收入帳目及各基金
 https://www.censtatd.gov.hk/tc/web_table.html?id=340-47012
-
-[政府統計處] 按分區、性別及年齡劃分的人口數目
-https://www.censtatd.gov.hk/tc/web_table.html?id=110-06811
-
-[政府統計處] 按區議會分區劃分的家庭住戶平均人數及住戶每月入息中位數
-https://data.gov.hk/tc-data/dataset/hk-censtatd-tablechart-130-06806
-https://www.censtatd.gov.hk/tc/wbr.html?ecode=B11303012024AN24
 
 [香港金融管理局] 固定收益及貨幣市場發展路線圖2025
 https://www.hkma.gov.hk/media/chi/doc/key-information/press-release/2025/20250925c3a1.pdf
@@ -98,29 +237,55 @@ https://www.hkma.gov.hk/media/chi/doc/key-information/press-release/2025/2025092
 [民政事務總署] 地方行政區分界
 https://data.gov.hk/tc-data/dataset/hk-had-json1-hong-kong-administrative-boundaries
 
+***
+Not Used!
+
+[政府統計處] 按分區、性別及年齡劃分的人口數目
+https://www.censtatd.gov.hk/tc/web_table.html?id=110-06811
+
+[政府統計處] 政府收入 一般收入帳目及各基金
+https://www.censtatd.gov.hk/tc/web_table.html?id=340-47011
+
 [思源宋體] 思源宋體
 https://github.com/adobe-fonts/source-han-serif/tree/release/?tab=readme-ov-file
+
+[政府統計處] 按區議會分區劃分的家庭住戶平均人數及住戶每月入息中位數
+https://data.gov.hk/tc-data/dataset/hk-censtatd-tablechart-130-06806
+https://www.censtatd.gov.hk/tc/wbr.html?ecode=B11303012024AN24
 
 
 ***
 
-Visible Districts (18): Central & Western 中西區 (A), Wan Chai 灣仔 (B), Eastern 東區 (C), Southern 南區 (D), Yau Tsim Mong 油尖旺 (E), Sham Shui Po 深水埗 (F), Kowloon City 九龍城 (G), Wong Tai Sin 黃大仙 (H), Kwun Tong 觀塘 (J), Tsuen Wan 荃灣 (K), Tuen Mun 屯門 (L), Yuen Long 元朗 (M), North 北區 (N), Tai Po 大埔 (P), Sai Kung 西貢 (Q), Sha Tin 沙田 (R), Kwai Tsing 葵青 (S), Islands 離島 (T)
+大家好，我是艾娜。今日帶來——零售債券規劃工具。
+主要受惠人有，食息一族、投資銀行、發債的政府企業。
 
-中西區
-灣仔
-東區
-南區
-油尖旺
-深水埗
-九龍城
-黃大仙
-觀塘
-荃灣
-屯門
-元朗
-北區
-大埔
-西貢
-沙田
-葵青
-離島
+現在市民普遍認知是：「庫房沒錢就發債。但有錢都拿去發工資，沒有幫助民生。」
+因此，我帶來——零售債券規劃工具。
+
+為什麼市民有這種認知？
+第一，因為市民看不見，債務和民生幸福有什麼關係。而香港債務儀，用來分析債務、經濟增長、民生幸福之間的關係。
+第二，因為大型基建太遠，太抽像；小型民生太高，沒人知。而GIS地圖，把財政地理可視化，讓大家看得見錢花在哪。
+最後，需求預測模型，幫助發債人找出何時發債、發多少債、如何定價、哪類項目最吸引市民。
+那麼發債，不再是為錢，而是為民生幸福。
+
+我們用到了⾹港公開數據和私企數據，包括香港金融管理局、財經事務及庫務局、立法會發展事務委員會、國際貨幣基金組織、香港交易所等等。
+
+第一，香港債務儀。
+世界上所有發達國家都有債務，而香港的債務穩健，只佔GDP約42%，遠低於美國的120%與日本的250%。大家可以想像成，在香港今天賺一元，明天只需還4毛；但美國和日本，明天分別要還一塊二和二塊五，收入遠高於負債。
+而將錢用於財政投資，像社會土木建設基金，幸福感才會長久。在2021至2023年，香港庫房因派糖虧損。這就像家庭一次性派錢買禮物，短暫開心，但無法持續；而在2025年，其實⽤好財政投資，香港庫房就收支平衡。
+
+第二，GIS地圖。
+全港十八區都有用到零售債券錢興建項目。而最多項目的地區是觀塘、西貢、離島、北區；單是四個地區，就合共有超過四十個項目。但為何市民看不見、感受不到幸福？
+這是興建項目圖，橫軸是完成時間，最遠是2040年的古洞北供冷系統。直軸是開支，最高開支是啟德體育園，投資了超二百億港元。原來，小型民生僅佔不足十五%。市民自然覺得錢花得「太高太遠」。
+那麼如何破題？就是以階段性成果，平衡大型基建與小型民生。這是我很深刻的民生幸福案例，觀塘翠屏河的天橋底，是起動九龍東的綠色活化項目。雖然這只是天橋底，但這是夏天陰涼位，下雨有頂蓋，讓一群附近工作的建築工人在這午休的地方。
+
+第三，需求預測模型。
+零售債券的成功，在於市民願意買多少。以2024年基建債券為例，只獲0.8倍認購；但2025年銀債，則超額認購1.8倍。「需求預測模型」正是回答這個問題。
+模型有五個因素，包括人口基數、家庭存款、定價水位、承銷時機、項目類型。其中，最重要是以「家庭存款」作為基礎財富指標，再以「定價水位」作為吸引力指標。
+我們預測2026年零售債券可能達到1.2至2.1倍超額認購，金額介乎600至1000億港元。以最好情景為例，家庭存款按年上升2.2%，而定價水位在3.5釐。
+每個家庭有多餘的生水，會選擇流向利息較高的零售債券水池。2024年12月，M2存款增長，即家庭少了生水買基債。相反，在2025年9月，M2存款和現金寶回報雙雙下降，就多了近400億生水買銀債。
+
+民生就像煮一鍋湯，不只是加水加料，更要掌握火候與時間。
+零售債券規劃工具是「火候計」，讓發債不再靠直覺，而是靠數據，煮出市民真正喝得出幸福的湯。
+
+下一步，我們的工具不止分析債務，更幫助做出三個關鍵決策：如何比較不同經濟結構、如何平衡大型基建與小型民生、如何刺激零售債券市場需求。
