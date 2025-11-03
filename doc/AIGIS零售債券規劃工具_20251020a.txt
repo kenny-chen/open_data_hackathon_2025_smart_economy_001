@@ -281,7 +281,8 @@ https://www.censtatd.gov.hk/tc/wbr.html?ecode=B11303012024AN24
 
 第三，需求預測模型。
 零售債券的成功，在於市民願意買多少。以2024年基建債券為例，只獲0.8倍認購；但2025年銀債，則超額認購1.8倍。「需求預測模型」正是回答這個問題。
-模型有五個因素，包括人口基數、家庭存款、定價水位、承銷時機、項目類型。其中，最重要是以「家庭存款」作為基礎財富指標，再以「定價水位」作為吸引力指標。
+模型有五個因素，包括人口基數、家庭存款、定價水位、承銷時機、項目類型。
+其中，最重要是以「家庭存款」作為基礎財富指標，再以「定價水位」作為吸引力指標。
 我們預測2026年零售債券可能達到1.2至2.1倍超額認購，金額介乎600至1000億港元。以最好情景為例，家庭存款按年上升2.2%，而定價水位在3.5釐。
 每個家庭有多餘的生水，會選擇流向利息較高的零售債券水池。2024年12月，M2存款增長，即家庭少了生水買基債。相反，在2025年9月，M2存款和現金寶回報雙雙下降，就多了近400億生水買銀債。
 
@@ -289,7 +290,6 @@ https://www.censtatd.gov.hk/tc/wbr.html?ecode=B11303012024AN24
 零售債券規劃工具是「火候計」，讓發債不再靠直覺，而是靠數據，煮出市民真正喝得出幸福的湯。
 
 下一步，我們的工具不止分析債務，更幫助做出三個關鍵決策：如何比較不同經濟結構、如何平衡大型基建與小型民生、如何刺激零售債券市場需求。
-
 
 ***
 
@@ -306,3 +306,106 @@ https://www.censtatd.gov.hk/tc/wbr.html?ecode=B11303012024AN24
 民生就像煮一鍋湯，不只是加水加料，更要掌握火候與時間。
 零售債券規劃工具是「火候計」，讓發債不再靠直覺，而是靠數據，煮出市民真正喝得出幸福的湯。
 下一步，我們的工具不止分析債務，更幫助做出三個關鍵決策：如何比較不同經濟結構、如何平衡大型基建與小型民生、如何刺激零售債券市場需求。
+
+***
+
+https://kenny-chen.github.io/open_data_hackathon_2025_smart_economy_001/
+
+
+AIGIS零售債券規劃工具。
+市民普遍認知：「庫房沒錢就發債，沒有幫助民生。」
+①香港債務儀：用來分析債務、經濟增長、民生幸福之間的關係。
+②香港財政債務GIS地圖：把財政地理可視化，讓大家看得見錢花在哪。
+③零售債券需求預測模型：幫助發債人找出何時發債、發多少債、如何定價、哪類項目最吸引市民。
+該工具是「火候計」，讓發債不再靠直覺，而是靠數據，煮出市民真正喝得出幸福的湯。
+
+***
+
+AIGIS零售债券规划工具。
+「库房没钱就发债，没有帮助民生。」
+①债务仪：分析债务丶经济增长丶民生幸福之间的关系。
+②财政债务GIS地图：让大家看得见钱花在哪。
+③零售债券预测模型：找出何时发债丶发多少债丶如何定价。
+https://kenny-chen.github.io/open_data_hackathon_2025_smart_economy_001/
+
+
+***
+
+👋 Hello everyone, I’m Kenny.
+Today I’m sharing a tool called the Retail Bond Planning Tool.
+
+Who benefits from retail bonds? People who earn interest, Investment banks, and Government and public companies that issue bonds.
+
+
+💬 What do people think?
+Many believe: “The government has no money, so it issues bonds. But even when it has money, it just pays salaries — nothing helps the public.”
+That’s why we created this tool — to change that view.
+
+Why do people feel this way?
+1. They can’t see how debt connects to public happiness.
+→ Our Debt Dashboard shows how debt, growth, and well-being are linked.
+2. Big projects feel far away and unclear. Small ones are too few.
+→ Our GIS Map shows where money is spent, making it easier to understand.
+3. Bond issuers don’t know when or how much to issue, or what projects people like.
+→ Our Demand Forecast Model helps answer these questions.
+So now, issuing bonds isn’t just about raising money — it’s about improving lives.
+
+📊 What data did we use?
+We used public and private data from:
+
+Hong Kong Monetary Authority
+Financial Services and Treasury Bureau
+Legislative Council
+IMF
+Hong Kong Stock Exchange
+...and more.
+
+
+🧮 Part 1: Debt Dashboard
+
+All developed countries have debt. Hong Kong’s debt is 42% of GDP, much lower than: USA: 120% and Japan: 250%
+Think of it like this: In Hong Kong, if you earn $1 today, you only owe $0.40 tomorrow. In the U.S., you owe $1.20. In Japan, $2.50.
+
+Spending on public projects brings lasting happiness.
+From 2021–2023, Hong Kong gave out cash (派糖), which caused losses.
+It’s like buying gifts — fun for a moment, but not sustainable.
+In 2025, smart investments helped balance the budget.
+
+🗺️ Part 2: GIS Map
+Retail bond money was used in all 18 districts.
+The top 4: Kwun Tong, Sai Kung, Islands, Northern District — over 40 projects.
+But why don’t people feel the benefits?
+
+Look at the project chart: X-axis: Completion time (some as late as 2040), Y-axis: Spending (e.g., Kai Tak Sports Park cost over HK$20 billion)
+Only 15% of spending went to small community projects. So people feel the money is spent on things that are “too big and too far.”
+
+Solution: Balance big and small projects. Example: Under the flyover at Tsui Ping River in Kwun Tong — part of Kowloon East’s green revitalization. It’s shady in summer, covered when it rains — a great lunch spot for nearby workers.
+
+📈 Part 3: Demand Forecast Model
+
+Retail bonds succeed when people want to buy them. Example: 2024 Infrastructure Bond: Only 0.8× subscribed, 2025 Silver Bond: 1.8× oversubscribed.
+Our model looks at 5 factors: Population, Household savings, Pricing level, Timing, Project type.
+
+Most important: Household savings = basic wealth. Pricing level = attractiveness.
+We predict: 2026 bonds may be 1.2× to 2.1× oversubscribed, Worth HK$60–100 billion. Best case: Savings grow 2.2%, Pricing at 3.5%.
+
+When families have extra savings, they choose bonds with better interest.
+In Dec 2024, savings grew — less money for infrastructure bonds.
+In Sep 2025, savings and returns dropped — families bought HK$40 billion more silver bonds.
+
+🍲 Final Message
+Public well-being is like cooking soup.
+It’s not just about adding ingredients — you need the right heat and timing.
+Our tool is like a “heat timer” — it helps make smart, data-driven decisions.
+So the “soup” brings real happiness to the people.
+
+🔮 What’s next? Our tool helps with 3 key decisions:
+How to compare different economies
+How to balance big vs. small projects
+How to boost retail bond demand
+
+①
+②
+③
+④
+⑤
