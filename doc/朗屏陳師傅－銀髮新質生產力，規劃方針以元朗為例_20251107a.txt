@@ -1,0 +1,47 @@
+朗屏陳師傅－銀色新質生產力模型，數據賦能務實規劃以元朗為例
+
+受惠人：
+1. 半退休養A牌電工
+2. 老舊樓宇的基層
+3. 社區五金水泥鋪
+
+痛點：
+做咗几十年師傅，仲有氣有力，但比社會遺棄咗。
+
+銀色新質生產力模型－電工師傅
+
+- 銀色新質生產力模型
+1. 多客源。老齡化屋邨，互惠基礎拎電套餐。
+2. 輕庫存。五金水泥鋪在最後八百米，朝早推車仔拎料就開工。
+3. 高形像。住同一個社區，收工就近屋企食飯。
+4. 快彈性。通過“法規&保險”介入，靈活推動銀色生產力。
+
+- 搵師傅。
+無則仔亂搞、實惠耐用、平民救星。
+
+- 化危為機
+將超30%+註冊A牌電工在未來10年退休，公共福利支出將增4x倍。
+
+- 下一步，化危為機，如何破局？
+“簡單job、易拎料、就腳、有保障。”
+1. 小區配套支持。共享架生房，新電錶則規。
+2. 高齡彈性收入。在現有公共福利下，有氣有力，開工搵食。
+3. 互惠保險托底。回饋社會時，享有醫保優惠。
+
+***
+
+⾹港公開數據 & 朗屏陳師傅
+
+政府統計處-2021年人口普查-主要屋苑統計數字及分界
+https://data.gov.hk/tc-data/dataset/hk-censtatd-census_geo-2021-population-census-by-mhe
+https://static.csdi.gov.hk/csdi-webpage/view/common/1ac4be18ba68e4f3bb2f601d4650d208029e67312f2265ac8ac34c725e1d7306
+
+香港房屋委員會-公共屋邨位置及資料
+https://data.gov.hk/tc-data/dataset/hk-housing-eslocator-eslocator
+
+建造業議會-註冊建造業工人統計數字
+https://www.cic.hk/common/StatisticofRegWorkers/dashboard.aspx?lang=zh-HK
+
+朗屏陳師傅-地圖-元朗架生鋪
+朗屏陳師傅-口述-A牌師傅的基層搵食
+https://kenny-chen.github.io/open_data_hackathon_2025_smart_economy_001/index2.html
