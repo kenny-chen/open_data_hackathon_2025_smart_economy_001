@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>朗屏陳師傅－銀色新質生產力模型，數據賦能務實規劃以元朗為例</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @font-face {
+            font-family: '思源宋體';
+            src: url('data/思源宋體.woff2') format('woff2');
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    gridTemplateColumns: {
+                        '20': 'repeat(20, minmax(0, 1fr))'
+                    },
+                    fontFamily: {
+                        'hei': ['Microsoft JhengHei', '微軟正黑體', '微软雅黑', 'sans-serif'],
+                        'nav': ['思源宋體', 'Times New Roman', 'SimSun', '宋体', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="m-0 p-0 font-hei">
+    <nav class="bg-white shadow-md h-10 flex items-center px-4">
+        <h1 class="text-lg font-bold text-gray-800 font-nav">朗屏陳師傅－銀色新質生產力模型，數據賦能務實規劃以元朗為例</h1>
+    </nav>
+    <div class="grid grid-cols-4" style="height: calc(100vh - 2.5rem);">
+        <!-- left column (75%) -->
+        <div class="col-span-3 p-2.5">
+            <div id="map" class="h-full"></div>
+        </div>
+        
+        <!-- right column (25%) -->
+        <div class="col-span-1 p-2.5 space-y-4">
+            <div class="bg-white rounded-lg shadow p-4">
+                <h3 class="text-lg font-bold mb-4 text-gray-800">當前地圖範圍統計</h3>
+                
+                <div class="space-y-3">
+                    <div class="flex justify-between items-center p-3 bg-gray-50 rounded">
+                        <span class="font-medium text-black">架生鋪</span>
+                        <span id="hardware-count" class="text-xl font-bold text-black">0</span>
+                    </div>
+                    
+                    <div class="flex justify-between items-center p-3 bg-gray-50 rounded">
+                        <span class="font-medium text-black">屋苑</span>
+                        <span id="housing-count" class="text-xl font-bold text-black">0</span>
+                    </div>
+                    
+                    <div class="flex justify-between items-center p-3 bg-gray-50 rounded">
+                        <span class="font-medium text-black">總人口</span>
+                        <span id="total-population" class="text-xl font-bold text-black">0</span>
+                    </div>
+                    
+                    <div class="flex justify-between items-center p-3 bg-gray-50 rounded">
+                        <span class="font-medium text-black">65歲以上人口</span>
+                        <span id="elderly-population" class="text-xl font-bold text-black">0</span>
+                    </div>
+                    
+                    <div class="flex justify-between items-center p-3 bg-gray-50 rounded">
+                        <span class="font-medium text-black">低收入人口</span>
+                        <span id="low-income-population" class="text-xl font-bold text-black">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/papaparse@5.4.1/papaparse.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+    <script>
+        var map = L.map('map').setView([22.4503687, 114.0232123], 15);
+        var hardwareStores = [];
+        var housingEstates = [];
+        var demographicData = [];
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+            attribution: '© OpenStreetMap © CartoDB',
+            subdomains: 'abcd'
+        }).addTo(map);
+
+        // Create custom pane for housing estates (top layer)
+        map.createPane('housingPane');
+        map.getPane('housingPane').style.zIndex = 650;
+
+        // Create custom pane for hardware stores
+        map.createPane('hardwarePane');
+        map.getPane('hardwarePane').style.zIndex = 660;
+
+        // Load Hong Kong Housing Authority public housing estates data
+        fetch('data2/香港房屋委員會-公共屋邨位置及資料.json')
+            .then(response => response.json())
+            .then(data => {
+                data.data.forEach(estate => {
+                    if (estate.Map_Latitude && estate.Map_Longitude) {
+                        const lat = parseFloat(estate.Map_Latitude);
+                        const lng = parseFloat(estate.Map_Longitude);
+                        
+                        housingEstates.push({lat, lng, data: estate});
+                        
+                        L.circleMarker([lat, lng], {
+                            radius: 6,
+                            fillColor: '#3388ff',
+                            color: '#fff',
+                            weight: 2,
+                            opacity: 1,
+                            fillOpacity: 0.8,
+                            pane: 'housingPane'
+                        }).addTo(map)
+                        .bindPopup(`
+                            <div class="font-hei">
+                                <h3 class="font-bold text-blue-600">${estate.Estate_Name}</h3>
+                                <strong>地區:</strong> ${estate.District_Name}, ${estate.Region_Name}<br />
+                                <strong>入伙年份:</strong> ${estate.Year_of_Intake}<br />
+                                <strong>單位面積:</strong> ${estate.Flat_Size_m2} 平方米<br />
+                            </div>
+                        `);
+                    }
+                });
+                updateStats();
+            });
+        
+        // Load converted WGS84 GeoJSON
+        fetch('data2/MHE_21C_wgs84.geojson')
+            .then(response => response.json())
+            .then(data => {
+                L.geoJSON(data, {
+                    style: {color: '#ff7800', weight: 1, opacity: 0.8, fillOpacity: 0.3},
+                    pane: 'overlayPane',
+                    onEachFeature: function(feature, layer) {
+                        const props = feature.properties;
+                        demographicData.push({feature, layer, props});
+                        layer.bindPopup(`
+                            <div class="font-hei">
+                                <h3 class="font-bold text-orange-600">${props.estate_chi}</h3>
+                                <strong>總人口:</strong> ${props.t_pop.toLocaleString()}<br/>
+                                <strong>工作人口:</strong> ${props.t_wp.toLocaleString()}<br/>
+                                <hr class="my-2"/>
+                                <strong>年齡分佈:</strong><br/>
+                                • 15歲以下: ${props.age_1.toLocaleString()}<br/>
+                                • 15-24歲: ${props.age_2.toLocaleString()}<br/>
+                                • 25-44歲: ${props.age_3.toLocaleString()}<br/>
+                                • 45-64歲: ${props.age_4.toLocaleString()}<br/>
+                                • 65歲以上: ${props.age_5.toLocaleString()}<br/>
+                                <hr class="my-2"/>
+                                <strong>家庭收入分佈:</strong><br/>
+                                • <$10K: ${props.dhi_sb_e1}<br/>
+                                • $10K-20K: ${props.dhi_sb_e2}<br/>
+                                • $20K-40K: ${props.dhi_sb_e3}<br/>
+                                • $40K+: ${props.dhi_sb_e4}<br/>
+                                <strong>收入中位數:</strong> $${props.ma_econhh.toLocaleString()}
+                            </div>
+                        `);
+                    }
+                }).addTo(map);
+                updateStats();
+            });
+
+        // Load hardware stores CSV data
+        Papa.parse('data2/朗屏陳師傅-地圖-元朗架生鋪.csv', {
+            download: true,
+            header: true,
+            complete: function(results) {
+                results.data.forEach(store => {
+                    if (store.Name && store.Coordinate) {
+                        const coords = store.Coordinate.split(',');
+                        const lat = parseFloat(coords[0]);
+                        const lng = parseFloat(coords[1]);
+                        
+                        hardwareStores.push({lat, lng, data: store});
+                        
+                        // Add 300m radius circle in light green
+                        L.circle([lat, lng], {
+                            radius: 300,
+                            fillColor: '#90EE90',
+                            color: '#90EE90',
+                            weight: 1,
+                            opacity: 0.3,
+                            fillOpacity: 0.1
+                        }).addTo(map);
+                        
+                        L.circleMarker([lat, lng], {
+                            radius: 6,
+                            fillColor: '#22c55e',
+                            color: '#fff',
+                            weight: 2,
+                            opacity: 1,
+                            fillOpacity: 0.8,
+                            pane: 'hardwarePane'
+                        }).addTo(map)
+                        .bindPopup(`
+                            <div class="font-hei">
+                                <h3 class="font-bold text-green-600">${store.Name}</h3>
+                            </div>
+                        `);
+                    }
+                });
+                updateStats();
+            }
+        });
+
+        function updateStats() {
+            const bounds = map.getBounds();
+            
+            // Count hardware stores in view
+            const hardwareInView = hardwareStores.filter(store => 
+                bounds.contains([store.lat, store.lng])
+            ).length;
+            
+            // Count housing estates in view
+            const housingInView = housingEstates.filter(estate => 
+                bounds.contains([estate.lat, estate.lng])
+            ).length;
+            
+            // Calculate demographic totals for areas in view
+            let totalPop = 0, elderlyPop = 0, lowIncomePop = 0;
+            
+            demographicData.forEach(item => {
+                if (bounds.intersects(item.layer.getBounds())) {
+                    totalPop += parseInt(item.props.t_pop) || 0;
+                    elderlyPop += parseInt(item.props.age_5) || 0;
+                    lowIncomePop += (parseInt(item.props.dhi_sb_e1) || 0) + (parseInt(item.props.dhi_sb_e2) || 0);
+                }
+            });
+            
+            // Update display
+            document.getElementById('hardware-count').textContent = hardwareInView;
+            document.getElementById('housing-count').textContent = housingInView;
+            document.getElementById('total-population').textContent = totalPop.toLocaleString();
+            document.getElementById('elderly-population').textContent = elderlyPop.toLocaleString();
+            document.getElementById('low-income-population').textContent = lowIncomePop.toLocaleString();
+        }
+        
+        // Update stats when map moves
+        map.on('moveend', updateStats);
+        map.on('zoomend', updateStats);
+    </script>
+</body>
+</html>
