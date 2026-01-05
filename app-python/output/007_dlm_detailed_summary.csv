@@ -1,0 +1,22 @@
+Metric,Value
+Dep. Variable,total bond subscription amount in hkd
+Model,OLS
+Method,Least Squares
+R-squared,0.6546167882937162
+Adj. R-squared,0.37203052417039306
+F-statistic,2.316520197202634
+Prob (F-statistic),0.031444375660836105
+Log-Likelihood,-10.528705905719093
+AIC,59.057411811438186
+BIC,91.61528107882003
+No. Observations,41.0
+Df Residuals,22.0
+Df Model,18.0
+Omnibus,3.2135022899116263
+Prob(Omnibus),0.20053807601454085
+Skew,0.5820895393001039
+Kurtosis,0.1763933125923014
+Durbin-Watson,1.2670232095584348
+Jarque-Bera (JB),2.368480359953595
+Prob(JB),0.305978579847951
+Cond. No.,114833.42585458297
