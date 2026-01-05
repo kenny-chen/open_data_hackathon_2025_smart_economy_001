@@ -625,3 +625,56 @@ nav -> "money market fund nav"
 lb_time_hkd  -> "time deposit hkd"
 lb_demand_hkd  -> "demand deposit hkd"
 close -> "hsi close price"
+
+***
+
+1. Data Loading & Preprocessing
+
+Configuration: Sets up output directory, date range (from 2022-01-01), and defines 7 key financial variables
+
+Multi-sheet Excel import: Reads data from 5 different sheets containing bond subscription, population, fund NAV, deposits, and HSI data
+
+Time series preparation: Converts to datetime index and resamples all data to monthly end-of-month frequency
+
+Data combination: Joins all datasets using outer join and applies forward fill to handle missing values
+
+2. Stationarity Testing
+
+ADF & KPSS tests: Tests each variable for stationarity (whether the time series has constant statistical properties)
+
+ADF tests for unit roots (non-stationarity)
+
+KPSS tests for trend stationarity
+
+Log transformation: Applies natural log to all variables to stabilize variance
+
+Z-score standardization: Only applied to money market fund NAV after log transformation
+
+Re-testing: Runs stationarity tests again on log-transformed data
+
+3. Lag Selection
+
+AutoRegression modeling: Uses AIC/BIC criteria to find optimal lag length for the dependent variable (bond subscription amount)
+
+Tests 1-12 lags: Appropriate for monthly data to capture seasonal patterns
+
+4. Distributed Lag Model (DLM)
+
+Multi-variable DLM: Models bond subscription as function of 6 explanatory variables with 2-period lags
+
+Lag structure: Creates variables for current period (t), 1-period lag (t-1), and 2-period lag (t-2)
+
+OLS regression: Fits the model using ordinary least squares
+
+5. Results & Visualization
+
+Model diagnostics: Saves coefficients, statistics, and diagnostic tests (normality, autocorrelation)
+
+Lag impact visualization: Creates bar charts showing how each variable's impact varies across lag periods
+
+Coefficient heatmap: Shows the strength and direction of relationships across variables and lags
+
+Cumulative impact ranking: Ranks variables by their total effect across all lag periods
+
+***
+
