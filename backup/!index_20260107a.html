@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIGIS Retail Bond Planning Tool - 零售債券規劃工具</title>
+    <meta property="og:title" content="AIGIS Retail Bond Planning Tool - 零售債券規劃工具">
+    <meta property="og:description" content="Hong Kong Debt Dashboard, GIS Map of Hong Kong Fiscal Debt, Retail Bond Demand Forecast Model - 香港債務儀、香港財政債務GIS地圖、零售債券需求預測模型">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://kenny-chen.github.io/open_data_hackathon_2025_smart_economy_001/ppt/AIGIS_Retail_Bond_Planning_Tool-20251101b/1.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen p-8">
+    <div class="max-w-4xl mx-auto">
+        <h1 class="text-3xl font-bold text-center mb-8 text-gray-800">AIGIS Retail Bond Planning Tool - 零售債券規劃工具</h1>
+        <div class="text-center mb-6 space-x-6">
+            <a href="https://www.linkedin.com/in/kennychenkk/" target="_blank" class="inline-flex items-center text-blue-600 hover:text-blue-800">
+                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"/>
+                </svg>
+                Kenny Chan
+            </a>
+            <a href="https://www.linkedin.com/in/danny-code/" target="_blank" class="inline-flex items-center text-blue-600 hover:text-blue-800">
+                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"/>
+                </svg>
+                Danny Chan
+            </a>
+            <a href="dashboard.html" target="_blank" class="inline-flex items-center text-green-600 hover:text-green-800 font-semibold">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                </svg>
+                Start with try
+            </a>
+        </div>
+        <div class="grid gap-6">
+            <!--video controls autoplay class="w-full rounded-lg shadow-md">
+                <source src="ppt/AIGIS_Retail_Bond_Planning_Tool_20251101a.mp4" type="video/mp4">
+            </video-->
+            <iframe class="w-full aspect-video rounded-lg shadow-md" src="https://www.youtube.com/embed/3xcn2vg6u_s?si=8QLLpTZVFgHE2ZYd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <img src="ppt/AIGIS_Retail_Bond_Planning_Tool-20251101b/1.jpg" alt="Slide 1" class="w-full rounded-lg shadow-md">
+            <p class="text-gray-700 mb-4 text-center text-xs">
+                Hello everyone, I’m Kenny.<br />
+                Today I’m sharing a tool called the Retail Bond Planning Tool.<br />
+                大家好，我是Kenny。<br />
+                今日帶來——零售債券規劃工具。
+            </p>
+            <img src="ppt/AIGIS_Retail_Bond_Planning_Tool-20251101b/2.jpg" alt="Slide 2" class="w-full rounded-lg shadow-md">
+            <p class="text-gray-700 mb-4 text-center text-xs">
+                Who benefits from retail bonds? ①People who earn interest, ②Investment banks, and ③Government and public companies that issue bonds.<br />
+                主要受惠人有，①食息一族、②投資銀行、③發債的政府企業。
+            </p>
+            <img src="ppt/AIGIS_Retail_Bond_Planning_Tool-20251101b/3.jpg" alt="Slide 3" class="w-full rounded-lg shadow-md">
+            <p class="text-gray-700 mb-4 text-center text-xs">
+                Many believe: "The government has no money, so it issues bonds. But even when it has money, it just pays salaries — nothing helps the public."<br />
+                現在市民普遍認知是：「庫房沒錢就發債。但有錢都拿去發工資，沒有幫助民生。」<br />
+                
+            </p>
+            <img src="ppt/AIGIS_Retail_Bond_Planning_Tool-20251101b/4.jpg" alt="Slide 4" class="w-full rounded-lg shadow-md">
+            <p class="text-gray-700 mb-4 text-center text-xs">
+                That's why we created AIGIS Retail Bond Planning Tool — to change that view.<br />
+                因此，我帶來——零售債券規劃工具。
+            </p>
+            <img src="ppt/AIGIS_Retail_Bond_Planning_Tool-20251101b/5.jpg" alt="Slide 5" class="w-full rounded-lg shadow-md">
+            <p class="text-gray-700 mb-4 text-center text-xs">
+                Why do people feel this way?<br />
+                1. They can't see how debt connects to public happiness. → Our Debt Dashboard shows how debt, growth, and well-being are linked.<br />
+                2. Big projects feel far away and unclear. Small ones are too few. → Our GIS Map shows where money is spent, making it easier to understand.<br />
+                3. Bond issuers don't know when or how much to issue, or what projects people like. → Our Demand Forecast Model helps answer these questions.<br />
+                So now, issuing bonds isn't just about raising money — it's about improving lives.<br />
+                為什麼市民有這種認知？<br />
+                第一，因為市民看不見，債務和民生幸福有什麼關係。而香港債務儀，用來分析債務、經濟增長、民生幸福之間的關係。<br />
+                第二，因為大型基建太遠，太抽像；小型民生太高，沒人知。而GIS地圖，把財政地理可視化，讓大家看得見錢花在哪。<br />
+                最後，需求預測模型，幫助發債人找出何時發債、發多少債、如何定價、哪類項目最吸引市民。<br />
+                那麼發債，不再是為錢，而是為民生幸福。
+            </p>
+            <img src="ppt/AIGIS_Retail_Bond_Planning_Tool-20251101b/6.jpg" alt="Slide 6" class="w-full rounded-lg shadow-md">
+            <p class="text-gray-700 mb-4 text-center text-xs">
+                We used public and private data from: Hong Kong Monetary Authority, Financial Services and Treasury Bureau, Legislative Council, IMF, Hong Kong Stock Exchange...and more.<br />
+                我們用到了⾹港公開數據和私企數據，包括香港金融管理局、財經事務及庫務局、立法會發展事務委員會、國際貨幣基金組織、香港交易所等等。
+            </p>
+            <img src="ppt/AIGIS_Retail_Bond_Planning_Tool-20251101b/7.jpg" alt="Slide 7" class="w-full rounded-lg shadow-md">
+            <p class="text-gray-700 mb-4 text-center text-xs">
+                Part 1: Hong Kong Debt Dashboard<br />
+                第一，香港債務儀。
+            </p>
+            <img src="ppt/AIGIS_Retail_Bond_Planning_Tool-20251101b/8.jpg" alt="Slide 8" class="w-full rounded-lg shadow-md">
+            <p class="text-gray-700 mb-4 text-center text-xs">
+                All developed countries have debt. Hong Kong's debt is 42% of GDP, much lower than: USA: 120% and Japan: 250%<br />
+                Think of it like this: In Hong Kong, if you earn $1 today, you only owe $0.40 tomorrow. In the U.S., you owe $1.20. In Japan, $2.50.<br />
+                世界上所有發達國家都有債務，而香港的債務穩健，只佔GDP約42%，遠低於美國的120%與日本的250%。<br />
+                大家可以想像成，在香港今天賺一元，明天只需還4毛；但美國和日本，明天分別要還一塊二和二塊五，收入遠高於負債。
+            </p>
+            <img src="ppt/AIGIS_Retail_Bond_Planning_Tool-20251101b/9.jpg" alt="Slide 9" class="w-full rounded-lg shadow-md">
+            <p class="text-gray-700 mb-4 text-center text-xs">
+                Spending on public projects brings lasting happiness.<br />
+                From 2021–2023, Hong Kong gave out cash, which caused losses. It's like buying gifts — fun for a moment, but not sustainable. In 2025, smart investments helped balance the budget.<br />
+                而將錢用於財政投資，像社會土木建設基金，幸福感才會長久。<br />
+                在2021至2023年，香港庫房因派糖虧損。這就像家庭一次性派錢買禮物，短暫開心，但無法持續；而在2025年，其實⽤好財政投資，香港庫房就收支平衡。
+            </p>
+            <img src="ppt/AIGIS_Retail_Bond_Planning_Tool-20251101b/10.jpg" alt="Slide 10" class="w-full rounded-lg shadow-md">
+            <p class="text-gray-700 mb-4 text-center text-xs">
+                Part 2: GIS Map<br />
+                第二，GIS地圖。
+            </p>
+            <img src="ppt/AIGIS_Retail_Bond_Planning_Tool-20251101b/11.jpg" alt="Slide 11" class="w-full rounded-lg shadow-md">
+            <p class="text-gray-700 mb-4 text-center text-xs">
+                Retail bond money was used in all 18 districts. The top 4: Kwun Tong, Sai Kung, Islands, Northern District — over 40 projects. But why don't people feel the benefits?<br />
+                全港十八區都有用到零售債券錢興建項目。而最多項目的地區是觀塘、西貢、離島、北區；單是四個地區，就合共有超過四十個項目。但為何市民看不見、感受不到幸福？
+            </p>
+            <img src="ppt/AIGIS_Retail_Bond_Planning_Tool-20251101b/12.jpg" alt="Slide 12" class="w-full rounded-lg shadow-md">
+            <p class="text-gray-700 mb-4 text-center text-xs">
+                Look at the project chart: X-axis: Completion time (some as late as 2040), Y-axis: Spending (e.g., Kai Tak Sports Park cost over HK$20 billion)<br />
+                Only 15% of spending went to small community projects. So people feel the money is spent on things that are "too big and too far."<br />
+                這是興建項目圖，橫軸是完成時間，最遠是2040年的古洞北供冷系統。直軸是開支，最高開支是啟德體育園，投資了超二百億港元。<br />
+                原來，小型民生僅佔不足15%。市民自然覺得錢花得「太高太遠」。
+            </p>
+            <img src="ppt/AIGIS_Retail_Bond_Planning_Tool-20251101b/13.jpg" alt="Slide 13" class="w-full rounded-lg shadow-md">
+            <p class="text-gray-700 mb-4 text-center text-xs">
+                Solution: Balance big and small projects.<br />
+                Example: Under the flyover at Tsui Ping River in Kwun Tong — part of Kowloon East's green revitalization. It's shady in summer, covered when it rains — a great lunch spot for nearby workers.<br />
+                那麼如何破題？就是以階段性成果，平衡大型基建與小型民生。<br />
+                這是我很深刻的民生幸福案例，觀塘翠屏河的天橋底，是起動九龍東的綠色活化項目。雖然這只是天橋底，但這是夏天陰涼位，下雨有頂蓋，讓一群附近工作的建築工人在這午休的地方。
+            </p>
+            <img src="ppt/AIGIS_Retail_Bond_Planning_Tool-20251101b/14.jpg" alt="Slide 14" class="w-full rounded-lg shadow-md">
+            <p class="text-gray-700 mb-4 text-center text-xs">
+                Part 3: Demand Forecast Model<br />
+                第三，需求預測模型。
+            </p>
+            <img src="ppt/AIGIS_Retail_Bond_Planning_Tool-20251101b/15.jpg" alt="Slide 15" class="w-full rounded-lg shadow-md">
+            <p class="text-gray-700 mb-4 text-center text-xs">
+                Retail bonds succeed when people want to buy them. Example: 2024 Infrastructure Bond: Only 0.8× subscribed, 2025 Silver Bond: 1.8× oversubscribed.<br />
+                Our model looks at 5 factors: Population, Household savings, Pricing level, Timing, Project type.<br />
+                零售債券的成功，在於市民願意買多少。以2024年基建債券為例，只獲0.8倍認購；但2025年銀債，則超額認購1.8倍。「需求預測模型」正是回答這個問題。<br />
+                模型有五個因素，包括人口基數、家庭存款、定價水位、承銷時機、項目類型。
+            </p>
+            <img src="ppt/AIGIS_Retail_Bond_Planning_Tool-20251101b/16.jpg" alt="Slide 16" class="w-full rounded-lg shadow-md">
+            <p class="text-gray-700 mb-4 text-center text-xs">
+                Most important: Household savings = basic wealth. Pricing level = attractiveness.<br />
+                We predict: 2026 bonds may be 1.2× to 2.1× oversubscribed, Worth HK$60–100 billion. Best case: Savings grow 2.2%, Pricing at 3.5%.<br />
+                其中，最重要是以「家庭存款」作為基礎財富指標，再以「定價水位」作為吸引力指標。<br />
+                我們預測2026年零售債券可能達到1.2至2.1倍超額認購，金額介乎600至1000億港元。以最好情景為例，家庭存款按年上升2.2%，而定價水位在3.5厘。
+            </p>
+            <img src="ppt/AIGIS_Retail_Bond_Planning_Tool-20251101b/17.jpg" alt="Slide 17" class="w-full rounded-lg shadow-md">
+            <p class="text-gray-700 mb-4 text-center text-xs">
+                When families have extra savings, they choose bonds with better interest.<br />
+                In Dec 2024, savings grew — less money for infrastructure bonds.<br />
+                In Sep 2025, savings and returns dropped — families bought HK$40 billion more silver bonds.<br />
+                每個家庭有多餘的生水，會選擇流向利息較高的零售債券水池。<br />
+                2024年12月，M2存款增長，即家庭少了生水買基債。<br />
+                相反，在2025年9月，M2存款和現金寶回報雙雙下降，就多了近400億生水買銀債。
+            </p>
+            <img src="ppt/AIGIS_Retail_Bond_Planning_Tool-20251101b/18.jpg" alt="Slide 18" class="w-full rounded-lg shadow-md">
+            <p class="text-gray-700 mb-4 text-center text-xs">
+                Public well-being is like cooking soup. It's not just about adding ingredients — you need the right heat and timing.<br />
+                Our tool is like a "heat timer" — it helps make smart, data-driven decisions. So the "soup" brings real happiness to the people.<br />
+                民生就像煮一鍋湯，不只是加水加料，更要掌握火候與時間。<br />
+                零售債券規劃工具是「火候計」，讓發債不再靠直覺，而是靠數據，煮出市民真正喝得出幸福的湯。
+            </p>
+            <img src="ppt/AIGIS_Retail_Bond_Planning_Tool-20251101b/19.jpg" alt="Slide 19" class="w-full rounded-lg shadow-md">
+            <p class="text-gray-700 mb-4 text-center text-xs">
+                What's next? Our tool helps with 3 key decisions: How to compare different economies, How to balance big vs. small projects, How to boost retail bond demand<br />
+                下一步，我們的工具不止分析債務，更幫助做出三個關鍵決策：如何比較不同經濟結構、如何平衡大型基建與小型民生、如何刺激零售債券市場需求。
+            </p>
+        </div>
+    </div>
+</body>
+</html>

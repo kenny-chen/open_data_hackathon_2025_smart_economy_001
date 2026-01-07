@@ -250,7 +250,7 @@ lag_data['lag'] = lag_data['lag'].fillna('0').astype(int)
 pivot_df = lag_data.pivot(index='base_var', columns='lag', values=['Coefficient', 'P_Value']).fillna(0)
 
 # Create grouped bar chart
-fig, ax = plt.subplots(figsize=(12, 8))
+fig, ax = plt.subplots(figsize=(8, 10))
 bar_width = 0.25
 x = np.arange(len(pivot_df.index))
 
@@ -298,7 +298,7 @@ plt.show()
 cumulative_impact = pivot_df['Coefficient'].sum(axis=1).sort_values(key=abs, ascending=False)
 cumulative_impact.index = [var.replace('_', ' ').title() for var in cumulative_impact.index]
 
-fig, ax = plt.subplots(figsize=(10, 8))
+fig, ax = plt.subplots(figsize=(8, 10))
 bars = ax.barh(range(len(cumulative_impact)), cumulative_impact.values, 
                color=['green' if x > 0 else 'red' for x in cumulative_impact.values], alpha=0.7)
 ax.set_yticks(range(len(cumulative_impact)))
